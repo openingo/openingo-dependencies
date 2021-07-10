@@ -96,6 +96,7 @@
         <jedis.version>3.6.1</jedis.version>
         <snakeyaml.version>1.29</snakeyaml.version>
         <modelmapper.version>2.4.4</modelmapper.version>
+        <junit.version>5.8.0-M1</junit.version>
     </properties>
 
     <dependencyManagement>
@@ -334,7 +335,13 @@
                 <version>${modelmapper.version}</version>
             </dependency>
 
-
+            <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-api</artifactId>
+                <version>${junit.version}</version>
+                <scope>test</scope>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
