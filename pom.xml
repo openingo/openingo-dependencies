@@ -59,7 +59,7 @@
     </scm>
 
     <modules>
-        <module>openingo-web-dependencies</module>
+        <module>openingo-boot-dependencies</module>
     </modules>
 
     <properties>
