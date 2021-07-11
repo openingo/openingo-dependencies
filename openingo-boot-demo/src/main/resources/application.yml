@@ -1,0 +1,7 @@
+openingo:
+  config:
+    name: name
+  configa:
+    name: name-a
+  configb:
+    name: name-b
