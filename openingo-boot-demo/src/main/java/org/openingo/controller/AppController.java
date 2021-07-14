@@ -27,6 +27,11 @@
 
 package org.openingo.controller;
 
+import org.openingo.User;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.config.ConfigurableBeanFactory;
+import org.springframework.context.annotation.Scope;
+import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -37,7 +42,16 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2021/7/10 02:04
  */
 @RestController
+@Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE, proxyMode = ScopedProxyMode.TARGET_CLASS)
 public class AppController {
+
+    @Autowired
+    User user;
+
+    @GetMapping("/user")
+    public String user() {
+        return user.toString();
+    }
 
     @GetMapping("/health")
     public String health() {
