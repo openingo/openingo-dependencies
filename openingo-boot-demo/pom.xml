@@ -32,7 +32,7 @@
     <parent>
         <artifactId>openingo-boot-dependencies</artifactId>
         <groupId>org.openingo.boot</groupId>
-        <version>1.0</version>
+        <version>1.0.1</version>
     </parent>
 
     <groupId>com.izcqi</groupId>
