@@ -1,7 +1,10 @@
 openingo:
   redip:
-    remote:
-      mysql:
-        url: jdbc:mysql://127.0.0.1/ik-db?useSSL=false&serverTimezone=GMT%2B8
-        username: root
-        password: dbadmin
+    mysql:
+      url: jdbc:mysql://127.0.0.1/ik-db?useSSL=false&serverTimezone=GMT%2B8
+      username: root
+      password: dbadmin
+    redis:
+      host: localhost
+      port: 6379
+      database: 0
