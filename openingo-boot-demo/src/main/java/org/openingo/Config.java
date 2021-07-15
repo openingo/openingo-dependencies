@@ -14,9 +14,5 @@ import org.springframework.context.annotation.Scope;
 @Configuration
 public class Config {
 
-	@Bean
-	@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
-	public User user() {
-		return new User();
-	}
+
 }

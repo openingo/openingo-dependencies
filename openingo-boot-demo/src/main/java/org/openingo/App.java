@@ -27,10 +27,8 @@
 
 package org.openingo;
 
-import org.openingo.spring.annotation.EnableExtension;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
 
 /**
  * App
@@ -39,7 +37,7 @@ import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfi
  * @since 2021/7/9 23:34
  */
 @SpringBootApplication
-@EnableExtension
+// @EnableExtension
 public class App {
 
     public static void main(String[] args) {

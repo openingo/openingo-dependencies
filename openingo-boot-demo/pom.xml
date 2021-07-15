@@ -42,9 +42,15 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.openingo.spring</groupId>
-            <artifactId>spring-boot-x</artifactId>
+            <groupId>org.openingo.boot</groupId>
+            <artifactId>redip-spring-boot-starter</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
+
+<!--        <dependency>-->
+<!--            <groupId>org.openingo.boot</groupId>-->
+<!--            <artifactId>spring-boot-x</artifactId>-->
+<!--        </dependency>-->
         <!--web-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
