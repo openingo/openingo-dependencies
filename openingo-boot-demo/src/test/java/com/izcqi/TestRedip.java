@@ -27,8 +27,8 @@ public class TestRedip {
 
 	@Test
 	public void addMysqlWord() {
-		mySQLRemoteDictionary.addMainWord("user", "new word又来q阿萨l","la哈哈哈哈哈阿萨","asdsadadasdasd111");
+		mySQLRemoteDictionary.addMainWord("order", "new word又来q阿萨l🆚🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥","la哈哈哈哈哈阿萨","asdsadadasdasd111");
 
-		RemoteDictionary.addWord(RemoteDictionaryEtymology.MYSQL, DictionaryType.MAIN_WORDS, "user","azzaaa");
+		RemoteDictionary.addWord(RemoteDictionaryEtymology.MYSQL, DictionaryType.MAIN_WORDS, "order","azzaaa");
 	}
 }
