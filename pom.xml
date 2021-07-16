@@ -33,7 +33,7 @@
     <artifactId>openingo-dependencies</artifactId>
     <name>${project.artifactId}</name>
     <packaging>pom</packaging>
-    <version>1.0.2</version>
+    <version>1.0.3-SNAPSHOT</version>
 
     <description>openingo dependencies</description>
 
@@ -63,7 +63,6 @@
     </modules>
 
     <properties>
-        <openingo-dependencies.version>1.0-SNAPSHOT</openingo-dependencies.version>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>${java.version}</maven.compiler.source>
