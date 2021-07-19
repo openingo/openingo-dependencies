@@ -77,6 +77,7 @@
         <mybatis.version>3.5.7</mybatis.version>
         <pagehelper.version>5.2.1</pagehelper.version>
         <mybatis-plus.version>3.4.3.1</mybatis-plus.version>
+        <velocity.version>2.2</velocity.version>
         <lombok.version>1.18.20</lombok.version>
         <commons-pool2.version>2.10.0</commons-pool2.version>
         <commons-parent.version>52</commons-parent.version>
@@ -207,6 +208,21 @@
                 <artifactId>mybatis-plus</artifactId>
                 <version>${mybatis-plus.version}</version>
             </dependency>
+            <!-- code generator -->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-generator</artifactId>
+                <version>${mybatis-plus.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.velocity</groupId>
+                <artifactId>velocity-engine-core</artifactId>
+                <version>${velocity.version}</version>
+                <scope>test</scope>
+            </dependency>
+
             <!-- https://mvnrepository.com/artifact/com.github.pagehelper/pagehelper -->
             <dependency>
                 <groupId>com.github.pagehelper</groupId>
