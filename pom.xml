@@ -77,7 +77,7 @@
         <mybatis.version>3.5.7</mybatis.version>
         <pagehelper.version>5.2.1</pagehelper.version>
         <mybatis-plus.version>3.4.3.1</mybatis-plus.version>
-        <mybatis-plus-generator.version>3.5.0</mybatis-plus-generator.version>
+        <mybatis-plus-generator.version>3.3.2</mybatis-plus-generator.version>
         <velocity.version>2.2</velocity.version>
         <lombok.version>1.18.20</lombok.version>
         <commons-pool2.version>2.10.0</commons-pool2.version>
