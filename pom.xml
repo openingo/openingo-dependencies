@@ -94,7 +94,7 @@
         <minio.version>8.2.1</minio.version>
         <jetcd-version>0.5.0</jetcd-version>
         <zookeeper.version>3.7.0</zookeeper.version>
-        <curator-framework.version>5.1.0</curator-framework.version>
+        <curator-framework.version>4.0.1</curator-framework.version>
         <lettuce.version>6.1.3.RELEASE</lettuce.version>
         <jedis.version>3.6.1</jedis.version>
         <snakeyaml.version>1.29</snakeyaml.version>

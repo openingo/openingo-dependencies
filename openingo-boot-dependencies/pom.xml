@@ -50,6 +50,7 @@
         <spring-boot-x.version>5.0.0</spring-boot-x.version>
         <morphia-spring-boot-starter.version>2.0.0</morphia-spring-boot-starter.version>
         <es-ik-redict-spring-boot-starter.version>1.0.1</es-ik-redict-spring-boot-starter.version>
+        <springfox-swagger.version>3.0.0</springfox-swagger.version>
     </properties>
 
     <dependencyManagement>
@@ -126,13 +127,18 @@
                 <artifactId>es-ik-redict-spring-boot-starter</artifactId>
                 <version>${es-ik-redict-spring-boot-starter.version}</version>
             </dependency>
-            <!-- https://mvnrepository.com/artifact/org.modelmapper.extensions/modelmapper-spring -->
+            <!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger2 -->
             <dependency>
-                <groupId>org.modelmapper.extensions</groupId>
-                <artifactId>modelmapper-spring</artifactId>
-                <version>${modelmapper.version}</version>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${springfox-swagger.version}</version>
             </dependency>
-
+            <!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui -->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>${springfox-swagger.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
