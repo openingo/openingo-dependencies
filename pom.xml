@@ -100,6 +100,7 @@
         <snakeyaml.version>1.29</snakeyaml.version>
         <modelmapper.version>2.4.4</modelmapper.version>
         <morphia.version>1.3.2</morphia.version>
+        <hutool.version>5.7.5</hutool.version>
         <junit.version>5.8.0-M1</junit.version>
         <mockito-junit-jupiter.version>3.11.2</mockito-junit-jupiter.version>
     </properties>
@@ -375,6 +376,12 @@
                 <groupId>org.mongodb.morphia</groupId>
                 <artifactId>morphia</artifactId>
                 <version>${morphia.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool.version}</version>
             </dependency>
 
             <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter -->
