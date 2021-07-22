@@ -32,7 +32,7 @@
     <parent>
         <artifactId>openingo-boot-dependencies</artifactId>
         <groupId>org.openingo.boot</groupId>
-        <version>1.0.3-SNAPSHOT</version>
+        <version>1.0.5-SNAPSHOT</version>
     </parent>
 
     <groupId>com.izcqi</groupId>
@@ -44,7 +44,7 @@
         <dependency>
             <groupId>org.openingo.boot</groupId>
             <artifactId>redip-spring-boot-starter</artifactId>
-            <version>1.0.1</version>
+            <version>1.0.4</version>
         </dependency>
 
         <dependency>
