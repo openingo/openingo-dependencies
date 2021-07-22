@@ -28,6 +28,7 @@
 package org.openingo.controller;
 
 import org.openingo.User;
+import org.openingo.spring.boot.extension.datasource.tx.TransactionTemplateX;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Scope;
@@ -47,6 +48,9 @@ public class AppController {
 
     @Autowired
     User user;
+
+    @Autowired
+    TransactionTemplateX transactionTemplateX;
 
     @GetMapping("/user")
     public String user() {
