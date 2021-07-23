@@ -69,7 +69,7 @@
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <logback-parent.version>1.2.3</logback-parent.version>
         <slf4j-parent.version>1.7.30</slf4j-parent.version>
-        <jdkits.version>3.6.9</jdkits.version>
+        <jdkits.version>3.7.1-SNAPSHOT</jdkits.version>
         <hikariCP.version>4.0.3</hikariCP.version>
         <druid.version>1.2.6</druid.version>
         <mysql-cj.version>8.0.25</mysql-cj.version>
@@ -379,9 +379,11 @@
             </dependency>
 
             <dependency>
+                <artifactId>hutool-parent</artifactId>
                 <groupId>cn.hutool</groupId>
-                <artifactId>hutool-all</artifactId>
                 <version>${hutool.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
             </dependency>
 
             <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter -->
