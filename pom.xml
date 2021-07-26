@@ -387,12 +387,11 @@
                 <type>pom</type>
             </dependency>
 
+            <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
             <dependency>
                 <groupId>com.google.guava</groupId>
-                <artifactId>guava-parent</artifactId>
+                <artifactId>guava</artifactId>
                 <version>${guava.version}</version>
-                <scope>import</scope>
-                <type>pom</type>
             </dependency>
 
             <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter -->
