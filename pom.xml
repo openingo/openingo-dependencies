@@ -109,17 +109,18 @@
 
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>ch.qos.logback</groupId>
-                <artifactId>logback-parent</artifactId>
-                <version>${logback-parent.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
+
             <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-parent</artifactId>
                 <version>${slf4j-parent.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-parent</artifactId>
+                <version>${logback-parent.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -173,6 +174,14 @@
                 <groupId>commons-codec</groupId>
                 <artifactId>commons-codec</artifactId>
                 <version>${commons-codec.version}</version>
+            </dependency>
+
+            <dependency>
+                <artifactId>hutool-parent</artifactId>
+                <groupId>cn.hutool</groupId>
+                <version>${hutool.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
             </dependency>
 
             <!-- db -->
@@ -378,14 +387,6 @@
                 <groupId>org.mongodb.morphia</groupId>
                 <artifactId>morphia</artifactId>
                 <version>${morphia.version}</version>
-            </dependency>
-
-            <dependency>
-                <artifactId>hutool-parent</artifactId>
-                <groupId>cn.hutool</groupId>
-                <version>${hutool.version}</version>
-                <scope>import</scope>
-                <type>pom</type>
             </dependency>
 
             <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
