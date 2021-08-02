@@ -40,6 +40,10 @@
 
     <artifactId>openingo-boot-demo</artifactId>
 
+    <properties>
+        <rocketmq.starter.version>2.2.0</rocketmq.starter.version>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.openingo.boot</groupId>
@@ -71,6 +75,12 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.rocketmq</groupId>
+            <artifactId>rocketmq-spring-boot-starter</artifactId>
+            <version>${rocketmq.starter.version}</version>
         </dependency>
     </dependencies>
 

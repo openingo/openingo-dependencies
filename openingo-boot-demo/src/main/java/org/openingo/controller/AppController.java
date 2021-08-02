@@ -28,13 +28,19 @@
 package org.openingo.controller;
 
 import org.openingo.User;
+import org.openingo.mq.Payload;
+import org.openingo.mq.Producer;
 import org.openingo.spring.boot.extension.datasource.tx.TransactionTemplateX;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Scope;
 import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+
+import javax.annotation.Resource;
 
 /**
  * AppController
@@ -60,5 +66,14 @@ public class AppController {
     @GetMapping("/health")
     public String health() {
         return "SUCCESS";
+    }
+
+    @Resource
+    private Producer producer;
+
+    @PostMapping("/mq")
+    public Object sendMq(@RequestBody Payload payload) {
+        this.producer.syncSend(Producer.TOPIC, payload);
+        return "ok";
     }
 }

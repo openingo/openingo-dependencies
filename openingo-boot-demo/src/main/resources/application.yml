@@ -8,3 +8,9 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+
+
+rocketmq:
+  name-server: localhost:9876
+  producer:
+    group: qicz-topic-group
