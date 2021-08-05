@@ -14,8 +14,8 @@ import org.springframework.stereotype.Component;
  */
 @Slf4j
 @Component
-@RocketMQMessageListener(topic = Producer.TOPIC, consumerGroup = Producer.TOPIC + "-consumer-group")
-public class Consumer extends AbstractConsumer<Payload> {
+@RocketMQMessageListener(topic = Producer.TOPIC, consumerGroup = Producer.TOPIC + "-consumer-group", selectorExpression = "qicz")
+public class Consumer extends AbstractConsumer<Payload> implements RocketMQListener<Payload> {
 
 	@Override
 	public void onMessage(Payload payload) {

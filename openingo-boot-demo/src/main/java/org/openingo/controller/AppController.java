@@ -73,7 +73,7 @@ public class AppController {
 
     @PostMapping("/mq")
     public Object sendMq(@RequestBody Payload payload) {
-        this.producer.syncSend(Producer.TOPIC, payload);
+        this.producer.syncSend(Producer.TOPIC, payload.getTags(), payload);
         return "ok";
     }
 }

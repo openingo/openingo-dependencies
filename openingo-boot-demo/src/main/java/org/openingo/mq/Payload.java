@@ -17,4 +17,6 @@ public class Payload implements Serializable {
 	Integer id;
 
 	Map<String, Object> data;
+
+	String tags;
 }
