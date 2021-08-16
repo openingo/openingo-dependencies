@@ -33,7 +33,7 @@
     <artifactId>openingo-dependencies</artifactId>
     <name>${project.artifactId}</name>
     <packaging>pom</packaging>
-    <version>1.0.5</version>
+    <version>1.0.6</version>
 
     <description>openingo dependencies</description>
 
@@ -69,7 +69,7 @@
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <logback-parent.version>1.2.3</logback-parent.version>
         <slf4j-parent.version>1.7.30</slf4j-parent.version>
-        <jdkits.version>3.7.1</jdkits.version>
+        <jdkits.version>3.7.2</jdkits.version>
         <hikariCP.version>4.0.3</hikariCP.version>
         <druid.version>1.2.6</druid.version>
         <mysql-cj.version>8.0.25</mysql-cj.version>
